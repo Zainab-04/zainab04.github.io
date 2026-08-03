@@ -23,5 +23,5 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 // Placeholder social links: fill these in with your real profile URLs
-document.getElementById('github-link').href = 'https://github.com/yourusername';
-document.getElementById('linkedin-link').href = 'https://linkedin.com/in/yourusername';
+document.getElementById('github-link').href = 'https://github.com/Zainab-04';
+document.getElementById('linkedin-link').href = 'https://www.linkedin.com/in/zainab-bi-04b6082ab/';
