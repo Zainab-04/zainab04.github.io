@@ -25,3 +25,4 @@ window.addEventListener('DOMContentLoaded', () => {
 // Placeholder social links: fill these in with your real profile URLs
 document.getElementById('github-link').href = 'https://github.com/Zainab-04';
 document.getElementById('linkedin-link').href = 'https://www.linkedin.com/in/zainab-bi-04b6082ab/';
+document.getElementById('leetcode-link').href = 'https://leetcode.com/u/zainab_04/';
