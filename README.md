@@ -2,7 +2,7 @@
 
 Personal portfolio site built with plain HTML, CSS, and JavaScript — no frameworks, no build step. Deployed with GitHub Pages.
 
-**Live site:** https://yourusername.github.io *(update after deploying)*
+**Live site:** https://zainab04.github.io *(update after deploying)*
 
 ## About
 
