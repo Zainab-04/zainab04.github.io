@@ -36,6 +36,25 @@ ul{ margin:0; padding:0; list-style:none; }
 .accent{ color: var(--accent); }
 .mono{ font-family: var(--font-mono); }
 
+.timeline__meta{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.timeline__shot, .cert-shot{
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--surface-2);
+  aspect-ratio: 16 / 10;
+}
+.timeline__shot img, .cert-shot img{
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.cert-shot{ margin-top: 0.5rem; }
+
 /* =========================================================
    TICKER (signature element)
 ========================================================= */
