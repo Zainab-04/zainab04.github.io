@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zainab Bi — Software Engineer</title>
+<meta name="description" content="Zainab Bi — Software Engineer building cloud-native full-stack applications and applied ML systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- signature: pipeline status ticker -->
+<div class="ticker" aria-hidden="false">
+  <div class="ticker__track">
+    <span class="ticker__item"><i class="dot dot--ok"></i>build: passing</span>
+    <span class="ticker__item"><i class="dot dot--ok"></i>page loads &minus;35%</span>
+    <span class="ticker__item"><i class="dot dot--ok"></i>deploy setup &minus;60%</span>
+    <span class="ticker__item"><i class="dot dot--ok"></i>ml accuracy 89%</span>
+    <span class="ticker__item"><i class="dot dot--ok"></i>scheduler satisfaction 92%</span>
+    <span class="ticker__item"><i class="dot dot--ok"></i>bugs &minus;25%</span>
+    <!-- duplicate for seamless loop -->
+    <span class="ticker__item"><i class="dot dot--ok"></i>build: passing</span>
+    <span class="ticker__item"><i class="dot dot--ok"></i>page loads &minus;35%</span>
+    <span class="ticker__item"><i class="dot dot--ok"></i>deploy setup &minus;60%</span>
+    <span class="ticker__item"><i class="dot dot--ok"></i>ml accuracy 89%</span>
+    <span class="ticker__item"><i class="dot dot--ok"></i>scheduler satisfaction 92%</span>
+    <span class="ticker__item"><i class="dot dot--ok"></i>bugs &minus;25%</span>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__brand">zainab<span class="accent">.bi</span></a>
+    <nav class="nav__links">
+      <a href="#about">about</a>
+      <a href="#experience">experience</a>
+      <a href="#projects">projects</a>
+      <a href="#skills">skills</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow">software engineer &middot; bengaluru, in</p>
+        <h1 class="hero__title">Zainab Bi</h1>
+        <p class="hero__role">I build cloud-native full-stack apps<br>and ship applied ML that works in production.</p>
+        <p class="hero__sub">CS graduate &middot; ex-intern at HostUp Cloud Technologies &middot; Next.js, Node.js, Docker, and a habit of measuring everything I ship.</p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">view projects</a>
+          <a href="#contact" class="btn btn--ghost">get in touch</a>
+        </div>
+      </div>
+
+      <div class="terminal" role="img" aria-label="Terminal window introducing Zainab Bi">
+        <div class="terminal__bar">
+          <span class="terminal__dot terminal__dot--r"></span>
+          <span class="terminal__dot terminal__dot--y"></span>
+          <span class="terminal__dot terminal__dot--g"></span>
+          <span class="terminal__title">zsh &mdash; whoami</span>
+        </div>
+        <div class="terminal__body">
+          <p><span class="prompt">zainab@bengaluru</span><span class="prompt-sep">:~$</span> whoami</p>
+          <p class="out" id="typed-out"></p>
+          <p class="cursor-line"><span class="prompt">zainab@bengaluru</span><span class="prompt-sep">:~$</span> <span class="blink">▍</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <p class="section__label">01 &middot; about</p>
+    <p class="about__text">
+      I'm a Computer Science graduate (CGPA 8.5/10) from Atria Institute of Technology, with hands-on
+      experience shipping cloud-native web applications during my internship at HostUp Cloud Technologies.
+      I'm equally comfortable configuring VPCs and containers as I am training a classification model &mdash;
+      my projects span full-stack platforms, DevOps tooling, and applied machine learning, usually all three at once.
+    </p>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <p class="section__label">02 &middot; experience</p>
+    <div class="timeline">
+      <div class="timeline__row">
+        <div class="timeline__when">
+          <span class="mono">Feb 2026 &ndash; May 2026</span>
+        </div>
+        <div class="timeline__what">
+          <h3>Software Engineer Intern</h3>
+          <p class="timeline__org">HostUp Cloud Technologies Pvt. Ltd. &middot; Bengaluru</p>
+          <ul>
+            <li>Developed cloud-native Next.js applications covering authentication, billing, and ticketing, cutting page load times by <strong>35%</strong>.</li>
+            <li>Containerized deployments with Docker, reducing deployment bugs by <strong>25%</strong>.</li>
+            <li>Configured cloud infrastructure &mdash; VPCs, subnets, security groups &mdash; cutting environment setup time by <strong>60%</strong>.</li>
+            <li>Worked within DevOps practices that reduced post-deployment issues by <strong>30%</strong>.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <p class="section__label">03 &middot; projects</p>
+    <div class="projects">
+
+      <article class="card">
+        <div class="card__head">
+          <h3>Glycemic Control ML Classifier</h3>
+          <span class="card__metric">89% accuracy</span>
+        </div>
+        <p>A Random Forest pipeline that classifies diabetes risk conditions, with feature selection tuned
+          so predictions return in under 100ms &mdash; fast enough to sit behind a live product, not just a notebook.</p>
+        <div class="tags">
+          <span>Python</span><span>NumPy</span><span>Scikit-learn</span><span>Pandas</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <h3>Genetic Algorithm Class Scheduler</h3>
+          <span class="card__metric">92% satisfaction</span>
+        </div>
+        <p>An AI-powered university timetable generator combining genetic algorithms with OR-Tools,
+          serving optimized schedules in ~200&ndash;500ms per request with real-time updates and JWT-secured access.</p>
+        <div class="tags">
+          <span>FastAPI</span><span>MongoDB</span><span>React/TS</span><span>OR-Tools</span><span>Google Gemini</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <h3>Modern Blog Platform</h3>
+          <span class="card__metric">~150&ndash;300ms response</span>
+        </div>
+        <p>A full-stack blog engine with Next.js and MongoDB (via Prisma), covering CRUD operations at
+          90&ndash;95% functional accuracy, built for fast expansion as features get added.</p>
+        <div class="tags">
+          <span>Next.js</span><span>Node.js</span><span>TypeScript</span><span>Prisma</span><span>Bun</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <p class="section__label">04 &middot; skills</p>
+    <div class="skills">
+      <div class="skills__row">
+        <span class="skills__key">languages</span>
+        <div class="tags"><span>Java</span><span>JavaScript</span><span>TypeScript</span><span>Python</span><span>HTML5</span><span>CSS3</span></div>
+      </div>
+      <div class="skills__row">
+        <span class="skills__key">frameworks</span>
+        <div class="tags"><span>React</span><span>Next.js</span><span>Node.js</span><span>Express.js</span><span>Tailwind CSS</span><span>Hibernate</span></div>
+      </div>
+      <div class="skills__row">
+        <span class="skills__key">data</span>
+        <div class="tags"><span>MongoDB</span><span>MySQL</span><span>NoSQL</span><span>Prisma</span></div>
+      </div>
+      <div class="skills__row">
+        <span class="skills__key">devops</span>
+        <div class="tags"><span>Docker</span><span>Kubernetes</span><span>Git</span><span>CI/CD</span><span>Linux</span></div>
+      </div>
+      <div class="skills__row">
+        <span class="skills__key">focus</span>
+        <div class="tags"><span>AI/ML</span><span>Cyber Security</span><span>Data Analytics</span><span>Cloud Computing</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTS + ACHIEVEMENTS -->
+  <section class="section">
+    <p class="section__label">05 &middot; certificates &amp; achievements</p>
+    <div class="split">
+      <div>
+        <h4 class="split__title">Certificates</h4>
+        <ul class="plain-list">
+          <li>Cyber Security &amp; Data Analytics &mdash; Deloitte</li>
+          <li>DSA with Java, Web Development &mdash; Apna College</li>
+          <li>Python Foundation &mdash; Infosys</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="split__title">Achievements</h4>
+        <ul class="plain-list">
+          <li>Co-authored Scopus-indexed blockchain voting research, presented at ICETSE 2025.</li>
+          <li>Published AI research on diabetes classification in Gradiva Review Journal.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section--contact">
+    <p class="section__label">06 &middot; contact</p>
+    <h2 class="contact__title">Let's build something that ships.</h2>
+    <div class="contact__links">
+      <a href="mailto:zainabbi041103@gmail.com">zainabbi041103@gmail.com</a>
+      <a href="tel:+918123642897">+91 81236 42897</a>
+      <a href="#" id="github-link">GitHub</a>
+      <a href="#" id="linkedin-link">LinkedIn</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Built by Zainab Bi &middot; <span class="mono">deployed via GitHub Pages</span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
