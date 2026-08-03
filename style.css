@@ -311,6 +311,27 @@ ul{ margin:0; padding:0; list-style:none; }
 }
 .card p{ color: var(--muted); font-size: 0.92rem; margin: 0 0 1rem; }
 
+.card__shot{
+  margin: -1.4rem -1.4rem 1rem;
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+  background: var(--surface-2);
+  aspect-ratio: 16 / 9;
+}
+.card__shot img{
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.card__links{ margin-top: 0.9rem; }
+.card__links a{
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--accent);
+  border-bottom: 1px solid transparent;
+}
+.card__links a:hover{ border-color: var(--accent); }
+
 .tags{ display: flex; flex-wrap: wrap; gap: 0.4rem; }
 .tags span{
   font-family: var(--font-mono);
