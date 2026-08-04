@@ -36,25 +36,6 @@ ul{ margin:0; padding:0; list-style:none; }
 .accent{ color: var(--accent); }
 .mono{ font-family: var(--font-mono); }
 
-.timeline__meta{
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-}
-.timeline__shot, .cert-shot{
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  overflow: hidden;
-  background: var(--surface-2);
-  aspect-ratio: 16 / 10;
-}
-.timeline__shot img, .cert-shot img{
-  width: 100%; height: 100%;
-  object-fit: cover;
-  display: block;
-}
-.cert-shot{ margin-top: 0.5rem; }
-
 /* =========================================================
    TICKER (signature element)
 ========================================================= */
@@ -264,12 +245,42 @@ ul{ margin:0; padding:0; list-style:none; }
   gap: 2rem;
 }
 .timeline__when{ color: var(--muted); font-size: 0.85rem; }
+
+.timeline__card{
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 1.6rem;
+  align-items: start;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.4rem;
+}
+.timeline__shot{
+  aspect-ratio: 4 / 3;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+}
+.timeline__shot img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
 .timeline__what h3{
   font-family: var(--font-display);
-  margin: 0 0 0.2rem;
+  margin: 0 0 0.25rem;
   font-size: 1.3rem;
 }
-.timeline__org{ color: var(--muted); margin: 0 0 0.9rem; font-size: 0.92rem; }
+.timeline__org{
+  color: var(--accent);
+  margin: 0 0 0.9rem;
+  font-size: 0.92rem;
+  font-family: var(--font-mono);
+  font-weight: 500;
+}
 .timeline__what ul{ display: flex; flex-direction: column; gap: 0.55rem; }
 .timeline__what li{
   position: relative;
@@ -286,8 +297,12 @@ ul{ margin:0; padding:0; list-style:none; }
 }
 .timeline__what strong{ color: var(--accent); }
 
+@media (max-width: 720px){
+  .timeline__card{ grid-template-columns: 1fr; }
+  .timeline__shot{ aspect-ratio: 16 / 10; }
+}
 @media (max-width: 640px){
-  .timeline__row{ grid-template-columns: 1fr; gap: 0.4rem; }
+  .timeline__row{ grid-template-columns: 1fr; gap: 0.6rem; }
 }
 
 /* Projects */
@@ -383,7 +398,7 @@ ul{ margin:0; padding:0; list-style:none; }
 .split{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 .split__title{
   font-family: var(--font-display);
@@ -392,8 +407,48 @@ ul{ margin:0; padding:0; list-style:none; }
   margin: 0 0 0.8rem;
 }
 .plain-list{ display: flex; flex-direction: column; gap: 0.6rem; color: var(--muted); font-size: 0.92rem; }
-@media (max-width: 640px){
+@media (max-width: 780px){
   .split{ grid-template-columns: 1fr; }
+}
+
+/* Certificate / achievement cards */
+.cert-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+.cert-card{
+  margin: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color .15s ease, transform .15s ease;
+}
+.cert-card:hover{
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+.cert-card__shot{
+  aspect-ratio: 4 / 3;
+  background: var(--surface-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cert-card__shot img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.cert-card figcaption{
+  padding: 0.65rem 0.8rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
 }
 
 /* Contact */
